@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+}
+
+@layer components {
+  .page-header {
+    @apply mb-8;
+  }
+  
+  .page-title {
+    @apply text-3xl font-bold text-gray-900 mb-2;
+  }
+  
+  .page-subtitle {
+    @apply text-gray-600 text-base;
+  }
+  
+  .stat-card {
+    @apply bg-white rounded-xl border border-gray-200 shadow-sm p-6 flex items-center gap-4 transition-all duration-200 hover:shadow-md;
+  }
+  
+  .stat-icon {
+    @apply p-3 rounded-lg;
+  }
+  
+  .stat-label {
+    @apply text-sm text-gray-600 font-medium;
+  }
+  
+  .stat-value {
+    @apply text-2xl font-bold text-gray-900;
+  }
+}
